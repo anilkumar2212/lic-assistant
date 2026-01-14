@@ -1,28 +1,3 @@
-# from fastapi import FastAPI
-# from pydantic import BaseModel
-# from src.ingestion.ingest_service import ingest_folder
-# from src.rag.answer_generator import answer_query
-
-# app = FastAPI(title="LIC GenAI Knowledge Assistant")
-
-# class IngestRequest(BaseModel):
-#     path: str
-
-# class QueryRequest(BaseModel):
-#     question: str
-
-# @app.post("/ingest")
-# def ingest(req: IngestRequest):
-#     ingest_folder(req.path)
-#     return {"status": "Ingestion completed"}
-
-# @app.post("/query")
-# def query(req: QueryRequest):
-#     result = answer_query(req.question)
-#     return {
-#         "answer": result
-#     }
-
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn

@@ -1,20 +1,3 @@
-# from langchain_openai import ChatOpenAI
-
-# llm = ChatOpenAI(
-#     model="gpt-4o",
-#     temperature=0
-# )
-
-# from langchain_openai import ChatOpenAI
-# from src.utils.config_loader import load_config
-
-# config = load_config()
-
-# llm = ChatOpenAI(
-#     model=config["llm"]["model"],
-#     temperature=config["llm"]["temperature"]
-# )
-
 from dotenv import load_dotenv
 import os
 
